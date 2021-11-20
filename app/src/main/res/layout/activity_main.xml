@@ -61,6 +61,7 @@
         android:layout_marginStart="155dp"
         android:layout_marginTop="54dp"
         android:layout_marginEnd="147dp"
+        android:onClick="btn_ingresar"
         android:text="@string/btn_ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

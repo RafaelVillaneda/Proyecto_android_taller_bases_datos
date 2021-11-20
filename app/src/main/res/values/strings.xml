@@ -3,4 +3,18 @@
     <string name="lbl_ususario">Ingresa tu usuario</string>
     <string name="lbl_contra">Ingresa tu contraseña</string>
     <string name="btn_ingresar">Ingresar</string>
+    <string name="lbl_indentificador">Indentificador</string>
+    <string name="lbl_nombre_compañia">Nombre de la compañia</string>
+    <string name="lbl_nombre_contacto">Nombre de contacto</string>
+    <string name="lbl_titulo_contacto">Titulo de contacto</string>
+    <string name="lbl_direccion_">Dirrecion</string>
+    <string name="lbl_ciudad">Ciudad</string>
+    <string name="lbl_Region">Region</string>
+    <string name="lbl_codigo_postal">Codigo postal</string>
+    <string name="lbl_pais">Pais</string>
+    <string name="lbl_telefono">Telefono</string>
+    <string name="lbl_FAX">Fax</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_salir">Salir</string>
 </resources>
