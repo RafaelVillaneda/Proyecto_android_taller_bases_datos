@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Proyecto_Android</string>
+    <string name="lbl_ususario">Ingresa tu usuario</string>
+    <string name="lbl_contra">Ingresa tu contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
 </resources>
