@@ -17,4 +17,6 @@
     <string name="btn_agregar">Agregar</string>
     <string name="btn_limpiar">Limpiar</string>
     <string name="btn_salir">Salir</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_eliminar">Borrar</string>
 </resources>

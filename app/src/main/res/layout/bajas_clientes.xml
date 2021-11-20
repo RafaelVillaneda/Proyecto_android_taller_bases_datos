@@ -1,172 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+            android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_indentificador" />
 
             <EditText
-                android:id="@+id/caja_indentificador"
+                android:id="@+id/caja_indentificador_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="true"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_nombre_compañia" />
 
             <EditText
-                android:id="@+id/caja_nombre_compañia"
+                android:id="@+id/caja_nombre_compañia_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_titulo_contacto" />
 
             <EditText
-                android:id="@+id/caja_titulo_contacto"
+                android:id="@+id/caja_titulo_contacto_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_direccion_" />
 
             <EditText
-                android:id="@+id/caja_direccion"
+                android:id="@+id/caja_direccion_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_ciudad" />
 
             <EditText
-                android:id="@+id/caja_ciudad"
+                android:id="@+id/caja_cuidad_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_Region" />
 
             <EditText
-                android:id="@+id/caja_region"
+                android:id="@+id/caja_region_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_codigo_postal" />
 
             <EditText
-                android:id="@+id/caja_codigo_postal"
+                android:id="@+id/caja_codigo_postal_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_pais" />
 
             <EditText
-                android:id="@+id/caja_pais"
+                android:id="@+id/caja_pais_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_telefono" />
 
             <EditText
-                android:id="@+id/caja_telefono"
+                android:id="@+id/caja_telefono_bajas2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="phone" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_FAX" />
 
             <EditText
-                android:id="@+id/caja_fax"
+                android:id="@+id/caja_fax2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:enabled="false"
                 android:inputType="phone" />
 
             <Button
-                android:id="@+id/btn_buscar"
+                android:id="@+id/btn_buscar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_agregar" />
+                android:text="@string/btn_buscar" />
 
             <Button
-                android:id="@+id/btn_borrar"
+                android:id="@+id/btn_borrar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_eliminar" />
+
+            <Button
+                android:id="@+id/btn_limpiar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_limpiar" />
 
             <Button
-                android:id="@+id/btn_limpiar"
+                android:id="@+id/btn_salir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_salir" />
         </LinearLayout>
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

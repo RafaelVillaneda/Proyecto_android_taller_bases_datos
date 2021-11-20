@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void btn_ingresar(View a){
-        Intent i=new Intent(this,Activity_Altas.class);
+        Intent i=new Intent(this,Activity_Bajas.class);
         startActivity(i);
     }
 }
