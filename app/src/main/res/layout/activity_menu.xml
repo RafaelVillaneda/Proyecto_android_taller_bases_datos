@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="354dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/lbl_queNecesistas"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_agregar_cliente_menu"
+        android:layout_width="221dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="156dp"
+        android:text="@string/lbl_agregar_cliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/btn_borrar_cliente_menu"
+        android:layout_width="224dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/lbl_agregar_cliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar_cliente_menu"
+        tools:text="@string/btn_borrar" />
+
+    <Button
+        android:id="@+id/btn_modificaciones"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/btn_modificar_cliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_borrar_cliente_menu"
+        tools:text="@string/btn_modificar_cliente" />
+
+    <Button
+        android:id="@+id/btn_consultas"
+        android:layout_width="233dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_consultar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_modificaciones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

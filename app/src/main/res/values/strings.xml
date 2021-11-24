@@ -19,4 +19,9 @@
     <string name="btn_salir">Salir</string>
     <string name="btn_buscar">Buscar</string>
     <string name="btn_eliminar">Borrar</string>
+    <string name="lbl_queNecesistas">¿Que accion necesitas hacer?</string>
+    <string name="lbl_agregar_cliente">Agregar Cliente</string>
+    <string name="btn_borrar">Borrar Cliente</string>
+    <string name="btn_modificar_cliente">Modificar cliente</string>
+    <string name="btn_consultar">Consultar algun cliente</string>
 </resources>
