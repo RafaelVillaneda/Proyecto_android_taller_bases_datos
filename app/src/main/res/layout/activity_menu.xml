@@ -45,7 +45,7 @@
         tools:text="@string/btn_borrar" />
 
     <Button
-        android:id="@+id/btn_modificaciones"
+        android:id="@+id/btn_modificaciones_menu"
         android:layout_width="229dp"
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
@@ -56,13 +56,13 @@
         tools:text="@string/btn_modificar_cliente" />
 
     <Button
-        android:id="@+id/btn_consultas"
+        android:id="@+id/btn_consultas_menu"
         android:layout_width="233dp"
         android:layout_height="57dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="10dp"
         android:text="@string/btn_consultar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_modificaciones" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_modificaciones_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
