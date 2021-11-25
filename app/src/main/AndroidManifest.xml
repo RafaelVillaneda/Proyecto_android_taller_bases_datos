@@ -20,6 +20,7 @@
         <activity android:name=".Activity_Altas"></activity>
         <activity android:name=".Activity_Bajas"></activity>
         <activity android:name=".activityMenu"></activity>
+        <activity android:name=".Activity_Cambios"></activity>
 
     </application>
 
