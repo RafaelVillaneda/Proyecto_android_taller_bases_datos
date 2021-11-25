@@ -26,7 +26,7 @@ public class activityMenu extends Activity {
 
                 break;
             case R.id.btn_consultas_menu:
-                
+
                 break;
         }
         startActivity(i);

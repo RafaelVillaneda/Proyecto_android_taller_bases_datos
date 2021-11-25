@@ -19,7 +19,7 @@
                 android:text="@string/lbl_indentificador" />
 
             <EditText
-                android:id="@+id/caja_indentificador_bajas2"
+                android:id="@+id/caja_indentificador_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -33,7 +33,7 @@
                 android:text="@string/lbl_nombre_compañia" />
 
             <EditText
-                android:id="@+id/caja_nombre_compañia_bajas2"
+                android:id="@+id/caja_nombre_compañia_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -47,7 +47,7 @@
                 android:text="@string/lbl_titulo_contacto" />
 
             <EditText
-                android:id="@+id/caja_titulo_contacto_bajas2"
+                android:id="@+id/caja_titulo_contacto_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -61,7 +61,7 @@
                 android:text="@string/lbl_direccion_" />
 
             <EditText
-                android:id="@+id/caja_direccion_bajas2"
+                android:id="@+id/caja_direccion_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -75,7 +75,7 @@
                 android:text="@string/lbl_ciudad" />
 
             <EditText
-                android:id="@+id/caja_cuidad_bajas2"
+                android:id="@+id/caja_cuidad_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -89,7 +89,7 @@
                 android:text="@string/lbl_Region" />
 
             <EditText
-                android:id="@+id/caja_region_bajas2"
+                android:id="@+id/caja_region_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -103,7 +103,7 @@
                 android:text="@string/lbl_codigo_postal" />
 
             <EditText
-                android:id="@+id/caja_codigo_postal_bajas2"
+                android:id="@+id/caja_codigo_postal_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -117,7 +117,7 @@
                 android:text="@string/lbl_pais" />
 
             <EditText
-                android:id="@+id/caja_pais_bajas2"
+                android:id="@+id/caja_pais_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -131,7 +131,7 @@
                 android:text="@string/lbl_telefono" />
 
             <EditText
-                android:id="@+id/caja_telefono_bajas2"
+                android:id="@+id/caja_telefono_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -145,7 +145,7 @@
                 android:text="@string/lbl_FAX" />
 
             <EditText
-                android:id="@+id/caja_fax2"
+                android:id="@+id/caja_fax"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
