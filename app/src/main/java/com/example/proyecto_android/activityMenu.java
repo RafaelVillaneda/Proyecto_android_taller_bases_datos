@@ -27,7 +27,7 @@ public class activityMenu extends Activity {
 
                 break;
             case R.id.btn_consultas_menu:
-
+                i=new Intent(this,Activity_Consultas.class);
                 break;
         }
         startActivity(i);
