@@ -13,6 +13,7 @@ public class activityMenu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
+
     public void abrirActivitis(View v){
         Intent i=null;
         switch (v.getId()) {
