@@ -30,6 +30,7 @@
         android:layout_marginEnd="156dp"
         android:onClick="abrirActivitis"
         android:text="@string/lbl_agregar_cliente"
+        app:icon="@mipmap/agregar_cliente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -42,6 +43,7 @@
         android:layout_marginTop="15dp"
         android:onClick="abrirActivitis"
         android:text="@string/lbl_agregar_cliente"
+        app:icon="@mipmap/borrar_usuario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_agregar_cliente_menu"
         tools:text="@string/btn_borrar" />
@@ -54,6 +56,7 @@
         android:layout_marginTop="28dp"
         android:onClick="abrirActivitis"
         android:text="@string/btn_modificar_cliente"
+        app:icon="@mipmap/rescribir"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_borrar_cliente_menu"
         tools:text="@string/btn_modificar_cliente" />
@@ -66,6 +69,7 @@
         android:layout_marginTop="10dp"
         android:onClick="abrirActivitis"
         android:text="@string/btn_consultar"
+        app:icon="@mipmap/buscar_tablas"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_modificaciones_menu" />
 
