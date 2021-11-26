@@ -7,8 +7,8 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="354dp"
-        android:layout_height="38dp"
+        android:layout_width="355dp"
+        android:layout_height="83dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="18dp"
@@ -42,11 +42,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:onClick="abrirActivitis"
-        android:text="@string/lbl_agregar_cliente"
+        android:text="@string/btn_borrar"
         app:icon="@mipmap/borrar_usuario"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_agregar_cliente_menu"
-        tools:text="@string/btn_borrar" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar_cliente_menu" />
 
     <Button
         android:id="@+id/btn_modificaciones_menu"

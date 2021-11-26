@@ -44,6 +44,7 @@ public class Activity_Altas extends AppCompatActivity {
                         caja_ciudad.getText().toString(),caja_region.getText().toString(),caja_codigo_postal.getText().toString(),
                         caja_pais.getText().toString(),caja_telefono.getText().toString(),caja_fax.getText().toString());
 
+
                 //codigo de agregar
             }else{
                 Toast.makeText(getBaseContext(),"No puede estar vacio el indentificador y/o nombre de compañia",Toast.LENGTH_LONG).show();
