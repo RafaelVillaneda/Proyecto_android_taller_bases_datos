@@ -24,4 +24,7 @@ public class Activity_Cambios extends Activity {
         caja_telefono=findViewById(R.id.caja_telefono_cambios);
         caja_fax=findViewById(R.id.caja_fax_cambios);
     }
+
+
+
 }
