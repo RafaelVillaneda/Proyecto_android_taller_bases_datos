@@ -7,6 +7,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import DAO.ClienteDAO;
+import Edntidades.clientes;
+
 public class Activity_Altas extends AppCompatActivity {
     EditText caja_indentificador,caja_nombre_conpañia,caja_nombre_contacto,caja_titulo_contacto,caja_direccion,caja_ciudad,caja_region,caja_codigo_postal,caja_pais,caja_telefono,caja_fax;
     @Override
@@ -35,6 +38,12 @@ public class Activity_Altas extends AppCompatActivity {
 
     public void agregarCliente(View v){
             if(verificarcajasVacias()==false){
+                clientes clie=new clientes(caja_indentificador.getText().toString(),
+                        caja_nombre_conpañia.getText().toString(),caja_nombre_contacto.getText().toString(),
+                        caja_titulo_contacto.getText().toString(),caja_direccion.getText().toString(),
+                        caja_ciudad.getText().toString(),caja_region.getText().toString(),caja_codigo_postal.getText().toString(),
+                        caja_pais.getText().toString(),caja_telefono.getText().toString(),caja_fax.getText().toString());
+
                 //codigo de agregar
             }else{
                 Toast.makeText(getBaseContext(),"No puede estar vacio el indentificador y/o nombre de compañia",Toast.LENGTH_LONG).show();

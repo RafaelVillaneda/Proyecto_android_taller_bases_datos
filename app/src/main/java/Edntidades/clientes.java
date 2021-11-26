@@ -42,6 +42,8 @@ public class clientes {
         this.fax = fax;
     }
 
+    public clientes() {}
+
     @NonNull
     public String getId_cliente() {
         return id_cliente;
