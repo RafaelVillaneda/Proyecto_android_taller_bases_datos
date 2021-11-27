@@ -177,7 +177,7 @@
                 android:id="@+id/btn_borrar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:enabled="false"
+                android:enabled="true"
                 android:onClick="borrar"
                 android:text="@string/btn_eliminar" />
 

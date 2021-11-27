@@ -21,6 +21,7 @@ public interface ClienteDAO {
 
     //Cambios
 
+
     //Consultas
     @Query("SELECT * FROM clientes")
     public List<clientes> optenerTodos();

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,7 +42,6 @@ public class Activity_Bajas extends AppCompatActivity {
                     northwindBD conexion=northwindBD.gettAppDatabase(getBaseContext());
                     cli=conexion.clienteDAO().optenerUno(caja_indentificador.getText().toString());
                     if(cli!=null){
-                        //bon.setEnabled(true);
                         caja_indentificador.setText(cli.getId_cliente().toString());
                         caja_nombre_conpañia.setText(cli.getNombreCompañia().toString());
                         caja_nombre_contacto.setText(cli.getNombreContacto().toString());
@@ -53,6 +53,14 @@ public class Activity_Bajas extends AppCompatActivity {
                         caja_pais.setText(cli.getPais().toString());
                         caja_telefono.setText(cli.getTelefono().toString());
                         caja_fax.setText(cli.getFax().toString());
+                    }else{
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getBaseContext(),"El registro NO existe",Toast.LENGTH_LONG).show();
+                                vaciarCajas();
+                            }
+                        });
                     }
                 }
             }).start();
@@ -62,7 +70,45 @@ public class Activity_Bajas extends AppCompatActivity {
 
     }
     public void borrar(View v){
+        if(!caja_indentificador.getText().toString().isEmpty()){
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    northwindBD conexion = northwindBD.gettAppDatabase(getBaseContext());
+                    if (conexion.clienteDAO().optenerUno(caja_indentificador.getText().toString()) != null){
+                        conexion.clienteDAO().eliminarCliente(caja_indentificador.getText().toString());
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getBaseContext(), "El registro fue eliminado con exito", Toast.LENGTH_LONG).show();
+                            vaciarCajas();
+                        }
+                    });
+                }else{runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getBaseContext(), "El registro NO existe", Toast.LENGTH_LONG).show();
+                            vaciarCajas();
+                        }
+                    });
 
+                    }
+                }
+            }).start();
+        }
+    }
+    public void vaciarCajas(){
+        caja_indentificador.setText("");
+        caja_nombre_conpañia.setText("");
+        caja_nombre_contacto.setText("");
+        caja_titulo_contacto.setText("");
+        caja_direccion.setText("");
+        caja_ciudad.setText("");
+        caja_region.setText("");
+        caja_codigo_postal.setText("");
+        caja_pais.setText("");
+        caja_telefono.setText("");
+        caja_fax.setText("");
     }
 
 }
