@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         cajaContra=findViewById(R.id.caja_contra);
     }
     public void btn_ingresar(View a){
+        Intent i = new Intent(this, activityMenu.class);
         Usuario usu=new Usuario(cajaUser.getText().toString(),cajaContra.getText().toString());
         new Thread(new Runnable() {
             @Override
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 Toast.makeText(getBaseContext(), "Bienvenido " + usu.getUser().toString(), Toast.LENGTH_LONG).show();
-                                exito=true;
+                                startActivity(i);
                             }
                         });
                     } else {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 Toast.makeText(getBaseContext(), "Lo siento el usuario o la contraseña estan incorrectas", Toast.LENGTH_LONG).show();
-                                exito=false;
+
                             }
                         });
                     }
@@ -54,16 +55,13 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             Toast.makeText(getBaseContext(), "Lo siento el usuario o la contraseña estan incorrectas", Toast.LENGTH_LONG).show();
-                            exito=false;
+
                         }
                     });
 
                 }
             }
         }).start();
-        if(exito==true) {
-            Intent i = new Intent(this, activityMenu.class);
-            startActivity(i);
-        }
+
     }
 }
