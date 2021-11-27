@@ -68,6 +68,23 @@ public class Activity_Cambios extends Activity {
     }
 
     }
+    public void limpiarCajas (View v){
+        limpieza();
+    }
+    public void limpieza(){
+        caja_indentificador.setText("");
+        caja_nombre_conpañia.setText("");
+        caja_nombre_contacto.setText("");
+        caja_titulo_contacto.setText("");
+        caja_direccion.setText("");
+        caja_ciudad.setText("");
+        caja_region.setText("");
+        caja_codigo_postal.setText("");
+        caja_pais.setText("");
+        caja_telefono.setText("");
+        caja_fax.setText("");
+    }
+
     public void cambios(View v){
         if(caja_indentificador.getText().toString().isEmpty()==false){
             new Thread(new Runnable() {
