@@ -25,6 +25,8 @@ public interface ClienteDAO {
     @Query("SELECT * FROM clientes")
     public List<clientes> optenerTodos();
 
+    @Query("SELECT * FROM clientes WHERE id_cliente LIKE :c")
+    public List<clientes> optenerPorFiltrado(String c);
 
 
 }

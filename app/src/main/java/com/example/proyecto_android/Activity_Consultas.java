@@ -39,6 +39,8 @@ public class Activity_Consultas extends Activity {
 
 
     public void buscar(View v){
+        String[] datos = {""};
+        int[] c = new int[1];
         final String[][] cad = {null};
         if(id.getText().toString().isEmpty()){
             //---------------------Recycler View
@@ -48,9 +50,6 @@ public class Activity_Consultas extends Activity {
 
             recicler.setLayoutManager(layoutManager);
 
-            String nombres[]={"Leila","luke","Han","C3PO","Holu","gr","Padme","1","2","3","4","5","6","7"};
-            String[] datos = {""};
-            int[] c = new int[1];
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -71,9 +70,6 @@ public class Activity_Consultas extends Activity {
                     adaper=new AdaptadorRegistros(datos[0].split("/"));
                     recicler.setAdapter(adaper);
 
-
-
-
                 }
             }).start();
 
@@ -86,10 +82,24 @@ public class Activity_Consultas extends Activity {
 
             recicler.setLayoutManager(layoutManager);
 
-            String nombres[]={"Leila","luke","Han","C3PO","Holu","gr","Padme","1","2","3","4","5","6","7"};
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    northwindBD conexion=northwindBD.gettAppDatabase(getBaseContext());
+                    e= conexion.clienteDAO().optenerPorFiltrado("%"+id.getText().toString()+"%");
+                    System.out.println("Hola");
+                    //System.out.println("Tamaño----------------->"+e.size());
+                    c[0] =e.size();
+                    for(int i=0;i<c[0];i++){
+                        datos[0] = datos[0]+e.get(i)+"/";
+                    }
+                    //System.out.println(Arrays.toString(datos));
 
-            adaper=new AdaptadorRegistros(nombres);
-            recicler.setAdapter(adaper);
+                    //System.out.println("Tamaño----------------->"+e);
+                    adaper=new AdaptadorRegistros(datos[0].split("/"));
+                    recicler.setAdapter(adaper);
+                }
+            }).start();
         }
     }
 
