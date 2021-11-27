@@ -20,7 +20,8 @@ public interface ClienteDAO {
     public void eliminarCliente(String id);
 
     //Cambios
-    @Query("UPDATE clientes SET nombreCompañia=:q,nombreContacto=:w,tituloContacto=:e,direccion=:r,ciudad=:t,region=:y,codigoPostal=:u,pais=:i,telefono=:o,fax=:p WHERE id_cliente=:a")
+    @Query("UPDATE clientes SET nombreCompañia=:q,nombreContacto=:w,tituloContacto=:e,direccion=:r,ciudad=:t,region=:y,codigoPostal=:u,pais=:i,telefono=:o,fax=:p " +
+                            "WHERE id_cliente=:a")
     public void modificar(String q, String w,String e,String r,String t,String y,String u,String i,String o,String p,String a);
 
     //Consultas

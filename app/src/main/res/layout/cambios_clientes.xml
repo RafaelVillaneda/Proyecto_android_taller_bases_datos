@@ -170,7 +170,7 @@
                 android:id="@+id/btn_modificar_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="agregarCliente"
+                android:onClick="cambios"
                 android:text="@string/btn_modificar_cliente" />
 
             <Button
