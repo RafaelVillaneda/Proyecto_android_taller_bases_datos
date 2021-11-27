@@ -24,7 +24,7 @@ public class activityMenu extends Activity {
                 i=new Intent(this,Activity_Bajas.class);
                 break;
             case R.id.btn_modificaciones_menu:
-
+                i=new Intent(this,Activity_Cambios.class);
                 break;
             case R.id.btn_consultas_menu:
                 i=new Intent(this,Activity_Consultas.class);

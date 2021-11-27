@@ -23,7 +23,7 @@
                 android:text="@string/lbl_indentificador" />
 
             <EditText
-                android:id="@+id/caja_indentificador_altas"
+                android:id="@+id/caja_indentificador_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -36,7 +36,7 @@
                 android:text="@string/lbl_nombre_compañia" />
 
             <EditText
-                android:id="@+id/caja_nombre_compañia_altas"
+                android:id="@+id/caja_nombre_compañia_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -49,7 +49,7 @@
                 android:text="@string/lbl_nombre_contacto" />
 
             <EditText
-                android:id="@+id/caja_nombre_contacto_altas"
+                android:id="@+id/caja_nombre_contacto_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -62,7 +62,7 @@
                 android:text="@string/lbl_titulo_contacto" />
 
             <EditText
-                android:id="@+id/caja_titulo_contacto_altas"
+                android:id="@+id/caja_titulo_contacto_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -75,7 +75,7 @@
                 android:text="@string/lbl_direccion_" />
 
             <EditText
-                android:id="@+id/caja_direccion_altas"
+                android:id="@+id/caja_direccion_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -88,7 +88,7 @@
                 android:text="@string/lbl_ciudad" />
 
             <EditText
-                android:id="@+id/caja_cuidad_altas"
+                android:id="@+id/caja_cuidad_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -101,7 +101,7 @@
                 android:text="@string/lbl_Region" />
 
             <EditText
-                android:id="@+id/caja_region_altas"
+                android:id="@+id/caja_region_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -114,7 +114,7 @@
                 android:text="@string/lbl_codigo_postal" />
 
             <EditText
-                android:id="@+id/caja_codigo_postal_altas"
+                android:id="@+id/caja_codigo_postal_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -127,7 +127,7 @@
                 android:text="@string/lbl_pais" />
 
             <EditText
-                android:id="@+id/caja_pais_altas"
+                android:id="@+id/caja_pais_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -140,7 +140,7 @@
                 android:text="@string/lbl_telefono" />
 
             <EditText
-                android:id="@+id/caja_telefono_altas"
+                android:id="@+id/caja_telefono_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -153,7 +153,7 @@
                 android:text="@string/lbl_FAX" />
 
             <EditText
-                android:id="@+id/caja_fax_altas"
+                android:id="@+id/caja_fax_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -163,6 +163,7 @@
                 android:id="@+id/btn_buscar_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="buscar_cambio"
                 android:text="@string/btn_buscar" />
 
             <Button
