@@ -24,4 +24,6 @@
     <string name="btn_borrar">Borrar Cliente</string>
     <string name="btn_modificar_cliente">Modificar cliente</string>
     <string name="btn_consultar">Consultar algun cliente</string>
+    <string name="lbl_consultas">Consultar clientes</string>
+    <string name="lbl_buscar_por_consultas">Id del cliente</string>
 </resources>

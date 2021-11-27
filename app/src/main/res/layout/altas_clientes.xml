@@ -172,6 +172,7 @@
                 android:id="@+id/btn_limpiar_cambios"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="limpiar"
                 android:text="@string/btn_limpiar" />
 
             <Button

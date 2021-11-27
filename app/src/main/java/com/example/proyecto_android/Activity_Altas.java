@@ -50,6 +50,7 @@ public class Activity_Altas extends AppCompatActivity {
     }
 
     public void agregarCliente(View v){
+
             if(verificarcajasVacias()==false){
                 clientes clie=new clientes(caja_indentificador.getText().toString(),
                         caja_nombre_conpañia.getText().toString(),caja_nombre_contacto.getText().toString(),
@@ -61,6 +62,7 @@ public class Activity_Altas extends AppCompatActivity {
                     public void run() {
                         northwindBD conexion = northwindBD.gettAppDatabase(getBaseContext());
                         conexion.clienteDAO().insertCliente(clie);
+
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -69,6 +71,7 @@ public class Activity_Altas extends AppCompatActivity {
                             }
                         });
                     }
+
                 }).start();
 
                 //codigo de agregar
@@ -76,6 +79,11 @@ public class Activity_Altas extends AppCompatActivity {
                 Toast.makeText(getBaseContext(),"No puede estar vacio el indentificador y/o nombre de compañia",Toast.LENGTH_LONG).show();
             }
     }
+
+    public void limpiar(View v){
+        vaciarCajas();
+    }
+
 
 
 

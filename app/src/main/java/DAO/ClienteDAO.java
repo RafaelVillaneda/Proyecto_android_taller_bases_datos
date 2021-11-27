@@ -4,6 +4,8 @@ import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import java.util.List;
+
 import Edntidades.clientes;
 
 @Dao
@@ -18,6 +20,10 @@ public interface ClienteDAO {
     public void eliminarCliente(String id);
 
     //Cambios
+
+    //Consultas
+    @Query("SELECT * FROM clientes")
+    public List<clientes> buscarTodos();
 
 
 

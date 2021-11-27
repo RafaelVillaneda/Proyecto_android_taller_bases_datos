@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="#857474">
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="383dp"
         android:layout_height="33dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="15dp" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/lbl_consultas"
+        android:textColor="#CD1515"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recicler"
-        android:layout_width="387dp"
-        android:layout_height="579dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="49dp" />
+        android:layout_width="381dp"
+        android:layout_height="576dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_consultas" />
+
+    <EditText
+        android:id="@+id/caja_consultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/recicler"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/lbl_buscar_por_consultas"
+        android:textColor="#D80909"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/caja_consultas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="56dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="17dp"
+        app:icon="@mipmap/buscar_tablas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caja_consultas"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 </androidx.constraintlayout.widget.ConstraintLayout>
