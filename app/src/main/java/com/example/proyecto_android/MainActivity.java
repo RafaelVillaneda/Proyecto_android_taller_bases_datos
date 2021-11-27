@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 northwindBD conexion = northwindBD.gettAppDatabase(getBaseContext());
-                //conexion.usuarioDAO().insertarUsuario(new Usuario("rafa","rafaferrari01"));
+                conexion.usuarioDAO().insertarUsuario(new Usuario("1","1"));
                 Usuario usu2 = conexion.usuarioDAO().buscarUsuario(cajaUser.getText().toString());
                 if (!(cajaUser.getText().toString().isEmpty() && cajaContra.getText().toString().isEmpty()) && usu2!=null){
                     if (usu.getUser().equals(usu2.getUser()) && usu.getContraseña().equals(usu2.getContraseña())) {

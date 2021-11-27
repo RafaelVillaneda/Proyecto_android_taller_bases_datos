@@ -61,15 +61,25 @@ public class Activity_Altas extends AppCompatActivity {
                     @Override
                     public void run() {
                         northwindBD conexion = northwindBD.gettAppDatabase(getBaseContext());
-                        conexion.clienteDAO().insertCliente(clie);
+                        try {
+                            conexion.clienteDAO().insertCliente(clie);
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(getBaseContext(),"Agregado con exito",Toast.LENGTH_LONG).show();
+                                    vaciarCajas();
+                                }
+                            });
+                        }catch (Exception e){
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(getBaseContext(),"El registro agregado ya existe",Toast.LENGTH_LONG).show();
+                                    vaciarCajas();
+                                }
+                            });
+                        }
 
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                Toast.makeText(getBaseContext(),"Agregado con exito",Toast.LENGTH_LONG).show();
-                                vaciarCajas();
-                            }
-                        });
                     }
 
                 }).start();
