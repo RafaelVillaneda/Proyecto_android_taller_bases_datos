@@ -41,7 +41,6 @@ public class Activity_Consultas extends Activity {
     public void buscar(View v){
         String[] datos = {""};
         int[] c = new int[1];
-        final String[][] cad = {null};
         if(id.getText().toString().isEmpty()){
             //---------------------Recycler View
             recicler.setHasFixedSize(true);
@@ -93,9 +92,6 @@ public class Activity_Consultas extends Activity {
                     for(int i=0;i<c[0];i++){
                         datos[0] = datos[0]+e.get(i)+"/";
                     }
-                    //System.out.println(Arrays.toString(datos));
-
-                    //System.out.println("Tamaño----------------->"+e);
                     adaper=new AdaptadorRegistros(datos[0].split("/"));
                     recicler.setAdapter(adaper);
                 }

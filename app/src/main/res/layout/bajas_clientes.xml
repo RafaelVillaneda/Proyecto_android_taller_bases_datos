@@ -41,6 +41,20 @@
                 android:inputType="textPersonName" />
 
             <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_nombre_contacto" />
+
+            <EditText
+                android:id="@+id/caja_nombre_contacto_bajas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName" />
+
+            <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -145,7 +159,7 @@
                 android:text="@string/lbl_FAX" />
 
             <EditText
-                android:id="@+id/caja_fax"
+                android:id="@+id/caja_fax_bajas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -156,12 +170,15 @@
                 android:id="@+id/btn_buscar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="buscar"
                 android:text="@string/btn_buscar" />
 
             <Button
                 android:id="@+id/btn_borrar2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="borrar"
                 android:text="@string/btn_eliminar" />
 
             <Button

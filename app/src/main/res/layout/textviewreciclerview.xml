@@ -7,6 +7,5 @@
 
     android:fontFamily="sans-serif-black"
     android:textColor="#C5615A"
-
     android:textSize="14sp"
     android:textStyle="bold" />

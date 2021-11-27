@@ -28,5 +28,8 @@ public interface ClienteDAO {
     @Query("SELECT * FROM clientes WHERE id_cliente LIKE :c")
     public List<clientes> optenerPorFiltrado(String c);
 
+    //Biuscar uno solo
+    @Query("SELECT * FROM clientes WHERE id_cliente=:c")
+    public clientes optenerUno(String c);
 
 }
