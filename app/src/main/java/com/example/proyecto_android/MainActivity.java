@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(getBaseContext(), "No pueden estar las cajas vacias", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getBaseContext(), "Lo siento el usuario o la contraseña estan incorrectas", Toast.LENGTH_LONG).show();
                             exito=false;
                         }
                     });

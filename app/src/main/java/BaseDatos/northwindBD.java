@@ -23,7 +23,7 @@ public abstract class northwindBD extends RoomDatabase {
     public static northwindBD gettAppDatabase(Context context){
         if(INSTANCE==null){
             INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                    northwindBD.class,"@escuela").build();
+                    northwindBD.class,"@northwind").build();
         }
         return  INSTANCE;
     }

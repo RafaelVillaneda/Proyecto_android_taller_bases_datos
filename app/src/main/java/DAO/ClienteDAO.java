@@ -23,7 +23,7 @@ public interface ClienteDAO {
 
     //Consultas
     @Query("SELECT * FROM clientes")
-    public List<clientes> buscarTodos();
+    public List<clientes> optenerTodos();
 
 
 

@@ -20,11 +20,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recicler"
+        android:id="@+id/reciclerView"
         android:layout_width="381dp"
-        android:layout_height="576dp"
+        android:layout_height="296dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caja_consultas" />
 
@@ -37,7 +37,7 @@
         android:layout_marginBottom="35dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/recicler"
+        app:layout_constraintBottom_toTopOf="@+id/reciclerView"
         app:layout_constraintStart_toEndOf="@+id/textView26"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
@@ -57,13 +57,12 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="56dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="17dp"
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:onClick="buscar"
         app:icon="@mipmap/buscar_tablas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/caja_consultas"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_consultas" />
 </androidx.constraintlayout.widget.ConstraintLayout>
