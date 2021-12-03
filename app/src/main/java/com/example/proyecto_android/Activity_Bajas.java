@@ -34,7 +34,6 @@ public class Activity_Bajas extends AppCompatActivity {
 
     public void buscar(View v){
         if(caja_indentificador.getText().toString().isEmpty()==false){
-
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -96,6 +95,9 @@ public class Activity_Bajas extends AppCompatActivity {
                 }
             }).start();
         }
+    }
+    public void  limpiar(View v){
+        vaciarCajas();
     }
     public void vaciarCajas(){
         caja_indentificador.setText("");
