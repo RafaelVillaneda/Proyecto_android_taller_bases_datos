@@ -21,8 +21,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/reciclerView"
-        android:layout_width="381dp"
-        android:layout_height="296dp"
+        android:layout_width="384dp"
+        android:layout_height="558dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,14 +55,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="60dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="26dp"
-        android:onClick="buscar"
-        app:icon="@mipmap/buscar_tablas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/caja_consultas" />
 </androidx.constraintlayout.widget.ConstraintLayout>
