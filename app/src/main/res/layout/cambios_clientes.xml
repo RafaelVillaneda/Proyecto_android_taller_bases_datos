@@ -180,11 +180,6 @@
                 android:onClick="limpiarCajas"
                 android:text="@string/btn_limpiar" />
 
-            <Button
-                android:id="@+id/btn_salir_cambios"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_salir" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
